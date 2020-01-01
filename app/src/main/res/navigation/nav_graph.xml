@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/napth_graph"
+    app:startDestination="@id/mainFragment3">
+    <fragment
+        android:id="@+id/mainFragment3"
+        android:name="com.dd.navigationapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment3_to_playersFragment3"
+            app:destination="@id/playersFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/playersFragment3"
+        android:name="com.dd.navigationapp.PlayersFragment"
+        android:label="fragment_players_list"
+        tools:layout="@layout/fragment_players_list" />
+</navigation>
